@@ -85,7 +85,9 @@
         android:textColor="@color/message_text_color"
         android:textSize="18sp"
         android:layout_toEndOf="@id/profile_image_relative_layout"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textDirection="locale"
+        />
 
 
 </RelativeLayout>

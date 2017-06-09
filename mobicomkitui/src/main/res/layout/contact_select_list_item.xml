@@ -122,7 +122,9 @@
         android:textColor="@color/message_details_text_color"
         android:textSize="18sp"
         android:layout_marginEnd="30dp"
-        android:layout_toEndOf="@id/profile_image_relative_layout" />
+        android:layout_toEndOf="@id/profile_image_relative_layout"
+        android:textDirection="locale"
+        />
 
 
     <android.support.v7.widget.AppCompatCheckBox
@@ -139,6 +141,7 @@
         app:buttonTint="#b2b2b2"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="5dp"
-        android:layout_marginStart="5dp" />
+        android:layout_marginStart="5dp"
+        />
 
 </RelativeLayout>

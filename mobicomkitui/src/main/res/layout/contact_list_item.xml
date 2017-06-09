@@ -121,7 +121,9 @@
         android:singleLine="true"
         android:textColor="@color/message_details_text_color"
         android:textSize="18sp"
-        android:layout_toEndOf="@id/profile_image_relative_layout" />
+        android:layout_toEndOf="@id/profile_image_relative_layout"
+        android:textDirection="locale"
+        />
 
 
 </RelativeLayout>
