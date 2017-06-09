@@ -51,7 +51,7 @@
         android:layout_alignBottom="@+id/profile_image_relative_layout"
         android:layout_alignEnd="@+id/profile_image_relative_layout"
         android:layout_alignRight="@+id/profile_image_relative_layout"
-        android:layout_gravity="left|top"
+        android:layout_gravity="start|top"
         android:background="@drawable/online_circle"
         android:textColor="@color/white"
         android:textStyle="bold"
