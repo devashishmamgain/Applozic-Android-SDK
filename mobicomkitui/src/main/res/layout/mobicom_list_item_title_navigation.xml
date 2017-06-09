@@ -20,7 +20,7 @@
         android:layout_height="match_parent"
         android:layout_toRightOf="@id/imgIcon"
         android:background="@color/mobitexter_main_color"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_toEndOf="@id/imgIcon">
 
         <TextView
