@@ -29,7 +29,8 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/applozic_ic_action_call" />
+            android:src="@drawable/applozic_ic_action_call"
+            android:layout_marginStart="10dp" />
 
 
         <TextView
@@ -42,9 +43,11 @@
             android:layout_toRightOf="@+id/applozic_call_image_type"
             android:fontFamily="sans-serif-condensed"
             android:paddingRight="10dp"
+            android:paddingEnd="10dp"
             android:text="missed"
             android:textColor="@color/white"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:layout_marginStart="10dp" />
 
         <TextView
             android:id="@+id/applozic_call_duration"
@@ -56,10 +59,12 @@
             android:fontFamily="sans-serif"
             android:paddingBottom="10dp"
             android:paddingRight="10dp"
+            android:paddingEnd="10dp"
             android:paddingTop="15dp"
             android:text="1 min 5 sec"
             android:textColor="@color/white"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:layout_alignStart="@+id/applozic_call_status" />
 
         <TextView
             android:id="@+id/applozic_call_timing"
@@ -72,7 +77,8 @@
             android:padding="10dp"
             android:text="11:40"
             android:textColor="@color/white"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
 

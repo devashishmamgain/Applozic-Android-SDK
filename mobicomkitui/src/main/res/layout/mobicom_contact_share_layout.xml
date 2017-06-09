@@ -38,7 +38,8 @@
             android:layout_gravity="right"
             android:layout_marginLeft="15dp"
             android:layout_marginStart="28dp"
-            android:layout_toRightOf="@+id/contact_share_image">
+            android:layout_toRightOf="@+id/contact_share_image"
+            android:layout_toEndOf="@+id/contact_share_image">
             <!--<TextView-->
             <!--android:layout_width="wrap_content"-->
             <!--android:layout_height="wrap_content"-->

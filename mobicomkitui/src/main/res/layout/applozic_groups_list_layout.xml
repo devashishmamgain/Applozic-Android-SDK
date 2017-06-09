@@ -14,7 +14,9 @@
         android:layout_height="wrap_content"
         android:paddingBottom="6dp"
         android:paddingLeft="@dimen/listview_item_padding"
+        android:paddingStart="@dimen/listview_item_padding"
         android:paddingRight="0dp"
+        android:paddingEnd="0dp"
         android:paddingTop="8dp">
 
         <TextView
@@ -37,7 +39,8 @@
             android:layout_gravity="center"
             android:layout_toRightOf="@+id/alphabeticImage"
             android:src="@drawable/applozic_group_icon"
-            android:visibility="visible" />
+            android:visibility="visible"
+            android:layout_toEndOf="@+id/alphabeticImage" />
 
     </RelativeLayout>
     <!-- Use standard android.R class text2 id instead of app specific id. This is just useful for
@@ -52,11 +55,14 @@
         android:layout_toRightOf="@id/profile_image_relative_layout"
         android:ellipsize="end"
         android:paddingLeft="@dimen/listview_item_padding"
+        android:paddingStart="@dimen/listview_item_padding"
         android:singleLine="true"
         android:text=""
         android:textColor="@color/message_text_color"
         android:textSize="14sp"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/profile_image_relative_layout" />
 
     <!-- Use standard android.R class text1 id instead of app specific id. This is just useful for
          consistency. This view also sets layout_alignWithParentIfMissing=true which lets the view
@@ -74,9 +80,12 @@
         android:ellipsize="end"
         android:gravity="center_vertical"
         android:paddingLeft="@dimen/listview_item_padding"
+        android:paddingStart="@dimen/listview_item_padding"
         android:singleLine="true"
         android:textColor="@color/message_text_color"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/profile_image_relative_layout"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

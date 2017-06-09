@@ -20,7 +20,8 @@
         android:text=""
         android:textColor="#ffffff"
         android:textSize="20dp"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:layout_marginEnd="4dp" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/contactImage"
@@ -29,7 +30,8 @@
         android:layout_margin="4dp"
         android:layout_toRightOf="@+id/alphabeticImage"
         android:src="@drawable/applozic_ic_contact_picture_180_holo_light"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:layout_toEndOf="@+id/alphabeticImage" />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/messageTextLayout"
@@ -42,14 +44,18 @@
         android:minHeight="55dp"
         android:minWidth="32dp"
         android:orientation="vertical"
-        android:padding="5dp">
+        android:padding="5dp"
+        android:layout_marginEnd="59dp"
+        android:layout_toEndOf="@+id/contactImage">
 
         <LinearLayout
             android:id="@+id/nameTextLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="8dp"
+            android:paddingStart="8dp"
             android:paddingRight="8dp"
+            android:paddingEnd="8dp"
             android:paddingTop="8dp">
 
             <TextView
@@ -64,6 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="2dp"
+                android:paddingEnd="2dp"
                 android:textSize="16sp"
                 android:visibility="gone" />
         </LinearLayout>
@@ -82,7 +89,8 @@
                 android:drawableLeft="@drawable/applozic_ic_action_attachment"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:drawableStart="@drawable/applozic_ic_action_attachment" />
 
             <include layout="@layout/mobicom_attachment_preview_layout" />
 
@@ -112,7 +120,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:paddingLeft="8dp"
+            android:paddingStart="8dp"
             android:paddingRight="2dp"
+            android:paddingEnd="2dp"
             android:text="Self destruct"
             android:textColor="@color/apploizc_darker_gray_color"
             android:textSize="11sp"
@@ -129,7 +139,9 @@
         android:gravity="bottom"
         android:orientation="horizontal"
         android:paddingBottom="6dp"
-        android:paddingLeft="15dp">
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:layout_marginStart="44dp">
 
         <TextView
             android:id="@+id/status"
@@ -137,7 +149,9 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:paddingLeft="0dp"
+            android:paddingStart="0dp"
             android:paddingRight="2dp"
+            android:paddingEnd="2dp"
             android:text=""
             android:textColor="@color/message_details_text_color"
             android:textSize="11sp" />
@@ -148,6 +162,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingRight="2dp"
+            android:paddingEnd="2dp"
             android:text="created at time"
             android:textSize="11sp" />
 
@@ -159,7 +174,8 @@
             android:gravity="center_vertical"
             android:textColor="@color/apploizc_darker_gray_color"
             android:textSize="11sp"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:drawableEnd="@drawable/applozic_ic_action_message_pending" />
 
     </LinearLayout>
 

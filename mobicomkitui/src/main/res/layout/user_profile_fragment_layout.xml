@@ -17,7 +17,8 @@
         android:gravity="center"
         android:textColor="#ffffff"
         android:textSize="20sp"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:layout_marginStart="8dp" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/contactImage"
@@ -53,6 +54,7 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="5dp"
                     android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
                     android:paddingTop="10dp"
                     android:text="Name"
                     android:textColor="@color/black"
@@ -64,6 +66,7 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
                     android:textColor="#7F000000"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -91,6 +94,7 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="5dp"
                     android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
                     android:paddingTop="10dp"
                     android:text="Status"
                     android:textColor="@color/black"
@@ -102,6 +106,7 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
                     android:textColor="#7F000000"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -127,6 +132,7 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="5dp"
                     android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
                     android:paddingTop="10dp"
                     android:text="Email"
                     android:textColor="@color/black"
@@ -138,6 +144,7 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
                     android:textColor="#7F000000"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -164,6 +171,7 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="5dp"
                     android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
                     android:paddingTop="10dp"
                     android:text="Phone"
                     android:textColor="@color/black"
@@ -175,6 +183,7 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
                     android:textColor="#7F000000"
                     android:textSize="14sp" />
             </LinearLayout>

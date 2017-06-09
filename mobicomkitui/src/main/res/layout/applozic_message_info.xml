@@ -20,7 +20,9 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/applozic_sent_message"
             android:clickable="false"
-            android:padding="0dp">
+            android:padding="0dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="10dp">
 
             <!--FrameLayout for message text -->
             <include
@@ -46,7 +48,9 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/applozic_sent_message"
-            android:clickable="false">
+            android:clickable="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="70dp">
 
             <RelativeLayout
                 android:id="@+id/applozic_file_info_inner_layout"
@@ -75,7 +79,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:src="@drawable/applozic_ic_action_attachment"
-                    android:visibility="visible" />
+                    android:visibility="visible"
+                    android:layout_alignParentStart="true" />
 
                 <TextView
                     android:id="@+id/applozic_message_info_attachment_filename"
@@ -86,7 +91,8 @@
                     android:padding="10dp"
                     android:text="Message Text"
                     android:textColor="@color/applozic_send_message_layout_background_color"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@+id/applozic_message_info_attachment_icon" />
             </RelativeLayout>
 
             <TextView
@@ -113,7 +119,9 @@
             android:padding="10dp"
             android:text="Message Text"
             android:textColor="@color/applozic_send_message_layout_background_color"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="70dp" />
 
         <!-- List View for read -->
         <RelativeLayout
@@ -130,7 +138,9 @@
                 android:layout_marginTop="20dp"
                 android:clickable="true"
                 app:cardCornerRadius="0dp"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -139,7 +149,8 @@
                     android:padding="5dp"
                     android:text="Read"
                     android:textColor="@color/applozic_theme_color_primary"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:layout_marginStart="3dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -159,7 +170,9 @@
                 android:layout_marginRight="10dp"
                 android:clickable="true"
                 app:cardCornerRadius="0dp"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/applozic_message_info_read_list"
@@ -187,7 +200,9 @@
                 android:layout_marginTop="10dp"
                 android:clickable="true"
                 app:cardCornerRadius="3dp"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -196,7 +211,8 @@
                     android:padding="5dp"
                     android:text="Delivered"
                     android:textColor="@color/applozic_theme_color_primary"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:layout_marginStart="3dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -215,7 +231,9 @@
                 android:layout_marginRight="10dp"
                 android:clickable="true"
                 app:cardCornerRadius="0dp"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/applozic_message_info_delivered_list_view"

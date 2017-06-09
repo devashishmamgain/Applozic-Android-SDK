@@ -84,14 +84,16 @@
                 android:id="@+id/applozic_profile_section_rl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp">
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp">
 
                 <RelativeLayout
                     android:id="@+id/applozic_profile_verticalline_rl"
                     android:layout_width="2dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
-                    android:background="@color/applozic_profile_devider_color" />
+                    android:background="@color/applozic_profile_devider_color"
+                    android:layout_marginStart="4dp" />
 
                 <View
                     android:layout_width="15dp"
@@ -106,7 +108,8 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:padding="10dp"
-                    android:src="@drawable/applozic_ic_action_edit" />
+                    android:src="@drawable/applozic_ic_action_edit"
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:id="@+id/applozic_profile_section_heading"
@@ -116,7 +119,8 @@
                     android:layout_marginTop="10dp"
                     android:text="Profile Status"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp" />
 
                 <TextView
                     android:id="@+id/applozic_profile_status"
@@ -128,7 +132,8 @@
                     android:layout_marginTop="15dp"
                     android:text="No Status"
                     android:textColor="@color/applozic_theme_color_primary"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp" />
 
                 <TextView
                     android:id="@+id/applozic_profile_status_online"
@@ -140,7 +145,8 @@
                     android:layout_marginTop="10dp"
                     android:text="online"
                     android:textSize="16sp"
-                    android:visibility="gone" />
+                    android:visibility="gone"
+                    android:layout_marginStart="15dp" />
 
 
                 <android.support.v7.widget.SwitchCompat
@@ -153,7 +159,8 @@
                     android:layout_marginEnd="18dp"
                     android:layout_marginRight="18dp"
                     android:text=""
-                    android:visibility="gone" />
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true" />
             </RelativeLayout>
 
             <View
@@ -170,6 +177,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
+                android:paddingStart="10dp"
                 android:visibility="gone">
 
                 <RelativeLayout
@@ -177,7 +185,8 @@
                     android:layout_width="2dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
-                    android:background="@color/applozic_profile_devider_color" />
+                    android:background="@color/applozic_profile_devider_color"
+                    android:layout_marginStart="4dp" />
 
                 <View
                     android:layout_width="15dp"
@@ -193,7 +202,8 @@
                     android:layout_marginTop="10dp"
                     android:text="Notifications"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp" />
 
                 <TextView
                     android:id="@+id/applozic_notification_status"
@@ -205,7 +215,8 @@
                     android:layout_marginTop="10dp"
                     android:text="Push Notifications"
                     android:textColor="@color/applozic_theme_color_primary"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp" />
 
 
                 <android.support.v7.widget.SwitchCompat
@@ -234,6 +245,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
+                android:paddingStart="10dp"
                 android:visibility="gone">
 
                 <RelativeLayout
@@ -241,7 +253,8 @@
                     android:layout_width="2dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
-                    android:background="@color/applozic_profile_devider_color" />
+                    android:background="@color/applozic_profile_devider_color"
+                    android:layout_marginStart="4dp" />
 
                 <View
                     android:layout_width="15dp"
@@ -258,7 +271,8 @@
                     android:layout_marginTop="10dp"
                     android:text="Data Usage"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -269,7 +283,8 @@
                     android:layout_marginTop="10dp"
                     android:text="Network Usage"
                     android:textColor="@color/applozic_theme_color_primary"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp" />
 
             </RelativeLayout>
 
@@ -295,7 +310,9 @@
                     android:text="Logout"
                     android:textColor="@color/white"
                     android:textSize="10sp"
-                    android:visibility="gone" />
+                    android:visibility="gone"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true" />
             </RelativeLayout>
 
         </LinearLayout>

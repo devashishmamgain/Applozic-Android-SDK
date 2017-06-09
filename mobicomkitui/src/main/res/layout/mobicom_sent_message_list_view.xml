@@ -19,7 +19,9 @@
         android:minHeight="55dp"
         android:minWidth="32dp"
         android:orientation="vertical"
-        android:padding="5dp">
+        android:padding="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="95dp">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/messageTextInsideLayout"
@@ -35,7 +37,8 @@
                 android:drawableLeft="@drawable/applozic_ic_action_attachment"
                 android:drawablePadding="8dp"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:drawableStart="@drawable/applozic_ic_action_attachment" />
 
             <include layout="@layout/mobicom_attachment_preview_layout" />
 
@@ -65,7 +68,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:paddingLeft="2dp"
+            android:paddingStart="2dp"
             android:paddingRight="8dp"
+            android:paddingEnd="8dp"
             android:text="Self destruct"
             android:textColor="@color/message_details_text_color"
             android:textSize="11dp"
@@ -79,7 +84,9 @@
         android:layout_below="@+id/messageTextLayout"
         android:orientation="horizontal"
         android:paddingBottom="6dp"
-        android:paddingRight="4dp">
+        android:paddingRight="4dp"
+        android:paddingEnd="4dp"
+        android:layout_alignParentEnd="true">
 
         <TextView
             android:id="@+id/status"
@@ -87,7 +94,9 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:paddingLeft="0dp"
+            android:paddingStart="0dp"
             android:paddingRight="2dp"
+            android:paddingEnd="2dp"
             android:text=""
             android:textColor="@color/message_details_text_color"
             android:textSize="11sp" />
@@ -98,6 +107,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingLeft="2dp"
+            android:paddingStart="2dp"
             android:text="created at time"
             android:textSize="11sp" />
 
